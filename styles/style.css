@@ -1,0 +1,357 @@
+/* FUENTE Crimson Text*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/*font-family: "Crimson Text", serif;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ /*ESTILADO PARA BODY GENERAL*/
+
+    font-family: "Crimson Text", serif;
+}
+
+/*ESTILADO PARA HEADER INICIO*/
+
+header{
+
+    border: 5px solid #2ca03b;
+    border-radius: 15px;
+}
+
+.container-fluid{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.li-nav{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.a-nav{
+
+    text-decoration: none;
+    color: black;
+   
+}
+
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+
+}
+
+.nav ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*ESTILADO HEADER HASTA ACA*/
+
+/*ESTILADO DE FOOTER INICIO*/
+
+footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 20px;
+    border-top: 2px solid #2ca03b;
+    padding-top: 15px;
+}
+
+.footer-p{
+    font-size: 15px;
+}
+
+.logoparafooter{
+
+    width: 80px;
+
+}
+
+/*ESTILADO DE FOOTER HASTA ACA*/
+
+h2{
+
+    margin: 15px;
+    padding: 15px;
+    font-weight: 400;
+    color: black;
+    font-size: 40px;
+
+}
+
+.deportes{
+
+    font-weight: 500;
+    font-size: 45px;
+    text-decoration: underline;
+    color: #2ca03b;
+
+}
+
+h1{
+
+    font-size: 100px;
+    text-align: center;
+    font-weight: 400;
+    color: #2ca03b;
+  
+}
+
+/*ESTILADO MAIN-HOME INICIO*/
+
+.container-noticias1{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   margin: 32px;
+   gap: 16px;
+
+}
+
+.section-noticias1 p{
+
+    padding: 5px;
+    text-align: left;
+    font-size: 24px;
+
+}
+
+.proximos-partidos{
+
+    margin-right: 50px;
+    padding: 60px;
+    border: 2px solid #2ca03b;
+    font-size: 25px;
+
+}
+
+.container-noticias2{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin: 32px;
+   gap: 16px;
+
+}
+
+.container-noticias3{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin: 32px;
+   gap: 16px;
+
+}
+
+.section-noticias2 p {
+
+    padding: 5px;
+    text-align: left;
+    font-size: 24px;
+
+}
+
+.section-noticias3 p{
+
+    padding: 5px;
+    text-align: left;
+    font-size: 24px;
+
+}
+/*ESTILADO MAIN-HOME FINAL*/
+
+/* PSEUDOCLASES Y BEM */
+
+/*nav a:hover {
+color: white; /* el texto se vuelve naranja */
+/*text-decoration: underline;
+text-decoration-color: #2ca03b;*/
+/*border: 1px solid black;
+border-radius: 15px;
+border-style: hidden;*/
+/*padding: 10px;
+background-color: #2ca03b;*/
+
+/*}*/
+
+/* Mantener accesibilidad del foco 
+input:focus-visible {
+outline: 3px solid #1e90ff;
+outline-offset: 2px;
+border-color: #1e90ff;
+} */
+
+/*button:active {
+background-color: darkblue;
+transform: scale(0.95); /* efecto de presión */
+
+.campeonatos-ol {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+
+}
+
+.campeonatos-li {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  
+}
+
+.campeonatos-li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #2ca03b;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.futbol-resumen {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin: 20px 50px;
+
+}
+
+.futbol-resumen img {
+
+    width: auto;
+
+}
+
+.plantel input {
+
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    font-size: 30px;
+    padding: 10px 50px;
+    font-weight: 200;
+    margin: 20px 0;
+    background-color: #2ca03b;
+    cursor: pointer;
+
+}
+
+.gallery{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 450px);
+    gap: 50px 20px;
+    justify-content: space-around;
+    grid-template-areas: "video video video"
+    "video video video"
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+
+}
+
+video{
+
+    grid-area: video;
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+
+}
+.foto1{
+
+    grid-area: foto1;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.foto2{
+
+    grid-area: foto2;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.foto3{
+
+    grid-area: foto3;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.foto4{
+
+    grid-area: foto4;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.foto5{
+
+    grid-area: foto5;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.foto6{
+
+    grid-area: foto6;
+    justify-self: center;
+    align-self: center;
+
+}
+
+/*TODO BOOTSTRAP
+
+.bg-navbar-caybr{
+    background-color: white;
+}
+
+.navbar-logo-svg{
+
+    width: 75px;
+    height: 75px;
+}
+
+.logo-menu{
+
+    width: 15px;
+    height: 15px;
+    color: #2ca03b;    
+}*/
