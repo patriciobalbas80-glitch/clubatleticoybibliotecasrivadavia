@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <a href="#">
                 <img class="escudo-logo" src="./assets/img/escudoparalogo.png" alt="escudo-logo">
             </a>
@@ -32,6 +32,30 @@
                     <a class="a-nav" href="./pages/multimedia.html">MULTIMEDIA</a>
                 </li>
             </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-nav-bootstrap">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/escudoparalogo.png" alt="escudo-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                        <a class="nav-link" href="./pages/futbol.html">FÚTBOL</a>
+                        <a class="nav-link" href="./pages/institucional.html">INSTITUCIONAL</a>
+                        <a class="nav-link" href="./pages/deportes.html">DEPORTES</a>
+                        <a class="nav-link" href="./pages/multimedia.html">MULTIMEDIA</a>
+                    </div>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
         </nav>
     </header>
 

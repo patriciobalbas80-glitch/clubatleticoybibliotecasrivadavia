@@ -12,55 +12,54 @@ body{ /*ESTILADO PARA BODY GENERAL*/
 
 /*ESTILADO PARA HEADER INICIO*/
 
-header{
+/* header{
 
     border: 5px solid #2ca03b;
     border-radius: 15px;
-}
+    margin: 0px 5px;
+    background-color: blue;
+} */
 
 .container-fluid{
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
-.li-nav{
+.collapse {
 
     display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.a-nav{
-
-    text-decoration: none;
-    color: black;
-   
-}
-
-nav{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 20px;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #000000;
 
 }
 
-.nav ul{
+.navbar-brand img{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    width: 80px
+
 }
 
-/*ESTILADO HEADER HASTA ACA*/
+.navbar{
+
+    border: 5px solid #2ca03b;
+    border-radius: 15px;
+    margin: 0px 5px;
+}
+
+.btn-outline-success{
+
+    background-color:#2ca03b;
+    color: #000000;
+
+}
+
+.form-control{
+    border: 1px solid #2ca03b;
+}
+/*ESTILADO HEADER FINAL*/
 
 /*ESTILADO DE FOOTER INICIO*/
 
@@ -337,21 +336,6 @@ video{
 
 }
 
-/*TODO BOOTSTRAP
+/*TODO BOOTSTRAP*/
 
-.bg-navbar-caybr{
-    background-color: white;
-}
 
-.navbar-logo-svg{
-
-    width: 75px;
-    height: 75px;
-}
-
-.logo-menu{
-
-    width: 15px;
-    height: 15px;
-    color: #2ca03b;    
-}*/
