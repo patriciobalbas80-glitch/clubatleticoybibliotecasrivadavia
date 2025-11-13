@@ -120,7 +120,6 @@ h1{
 
 .container-noticias{
 
-    border: 1px solid black;
     margin: 5px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -132,11 +131,15 @@ h1{
     "img-noticias1 article-noticias1 article-noticias1 proximos-partidos"
     "img-noticias2 article-noticias2 article-noticias2 proximos-partidos"
     "img-noticias3 article-noticias3 article-noticias3 proximos-partidos";
+    gap: 15px;
 }
 
 .proximos-partidos{
     grid-area: proximos-partidos;
     align-self: self-start;
+    border: 3px solid #2ca03b;
+    border-radius: 10px;
+    padding: 10px 15px;
 }
 
 .img-noticias1{
@@ -318,6 +321,5 @@ video{
 
 }
 
-/*TODO BOOTSTRAP*/
 
 
