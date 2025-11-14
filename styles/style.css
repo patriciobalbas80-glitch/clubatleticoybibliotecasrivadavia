@@ -53,6 +53,7 @@ body{ /*ESTILADO PARA BODY GENERAL*/
 
     background-color:#2ca03b;
     color: #000000;
+    height: auto;
 
 }
 
@@ -321,5 +322,46 @@ video{
 
 }
 
+/* MEDIA QUERIES*/
 
-
+@media (max-width: 451px) {
+    .container-noticias{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "proximos-partidos"
+        "img-noticias1"
+        "article-noticias1"
+        "img-noticias2"
+        "article-noticias2"
+        "img-noticias3"
+        "article-noticias3";
+        justify-content: normal;
+        gap: 5px;      
+    }
+    .container-noticias h2{
+        font-size: 25px;
+        justify-self: center;
+    }
+    .article-noticias1 p{
+        font-size: 15px;
+        width: 350px;
+    }
+    .article-noticias2 p{
+        font-size: 15px;
+        width: 350px;
+    }
+    .article-noticias3 p{
+        font-size: 15px;
+        width: 350px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .proximos-partidos{
+        margin-bottom: 10px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
