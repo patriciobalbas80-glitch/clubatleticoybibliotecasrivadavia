@@ -169,6 +169,40 @@ h1{
 }
 /*ESTILADO MAIN-HOME FINAL*/
 
+/*ESTILADO PAGINA INSTITUCIONAL INICIO*/
+
+.dropdown-menu{
+    background-color: #2ca03b;
+    border: 1px solid black;
+    color: #fafafa;
+    justify-content: center;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+
+    background-color: #fafafa;
+    color: #2ca03b;
+}
+.btn-institucional{
+    border: 2px solid #2ca03b;
+    font-size: 25px;
+}
+.dropdown-institucional{
+    justify-self: center;
+}
+.dropdown-item{
+    color: #fafafa;
+}
+
+.p-institucional{
+    font-size: 20px;
+    margin: 20px;
+}
+.img-institucional{
+    text-align: center;
+}
+/*ESTILADO PAGINA INSTITUCIONAL FINAL*/
+
 /* PSEUDOCLASES Y BEM */
 
 /*nav a:hover {
@@ -377,4 +411,12 @@ video{
         padding: 10px 25px;
         margin: 20px 0;
     }
+    .p-institucional{
+    font-size: 15px;
+    }
+    .btn-institucional{
+    border: 2px solid #2ca03b;
+    font-size: 15px;
 }
+}
+
