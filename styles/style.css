@@ -234,7 +234,8 @@ transform: scale(0.95); /* efecto de presión */
 
 .futbol-resumen img {
 
-    width: auto;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -363,5 +364,17 @@ video{
     }
     footer{
         flex-direction: column;
+    }
+    .campeonatos-ol{
+        flex-direction: column;
+        align-items: center;
+    }
+    .campeonatos-li {
+        margin-top: 10px;
+}
+    .plantel input{
+        font-size: 15px;
+        padding: 10px 25px;
+        margin: 20px 0;
     }
 }
