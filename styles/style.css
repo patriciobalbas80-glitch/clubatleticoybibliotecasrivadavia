@@ -358,7 +358,7 @@ video{
 }
 
 /* MEDIA QUERIES*/
-
+/*MQ QUE HACE RESPONSIVE PARA MOBILE AL INDEX-FUTBOL-INSTITUCIONAL INICIO*/
 @media (max-width: 451px) {
     .container-noticias{
         grid-template-columns: 1fr;
@@ -416,7 +416,7 @@ video{
     }
     .campeonatos-li {
         margin-top: 10px;
-}
+    }
     .plantel input{
         font-size: 15px;
         padding: 10px 25px;
@@ -428,6 +428,70 @@ video{
     .btn-institucional{
     border: 2px solid #2ca03b;
     font-size: 15px;
+    }
 }
-}
+/*MQ QUE HACE RESPONSIVE PARA MOBILE AL INDEX-FUTBOL-INSTITUCIONAL FINAL*/
 
+/*MQ QUE HACE RESPONSIVE EN 451PX-900PX AL INDEX-FUTBOL INICIO*/
+@media (min-width: 451px) and (max-width: 900px){
+    .container-noticias{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "proximos-partidos"
+        "img-noticias1"
+        "article-noticias1"
+        "img-noticias2"
+        "article-noticias2"
+        "img-noticias3"
+        "article-noticias3";
+        justify-content: normal;
+        gap: 5px;      
+    }
+    .titulo-noticias{
+        font-size: 25px;
+        justify-self: center;
+    }
+    .p-noticias{
+            font-size: 16px;
+        width: 350px;
+        margin: 5px;
+    }
+    h1{
+        font-size: 80px;
+        justify-self: center;
+    }
+    .proximos-partidos{
+        justify-self: center;
+        align-self: center;
+        margin: 15px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .redes-footer{
+        justify-content: space-between;
+    }
+    .campeonatos-ol{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+    }
+}
+/*MQ QUE HACE RESPONSIVE EN 451PX-900PX AL INDEX-FUTBOL FINAL*/
+
+/*MQ SOLO PARA BOTON "BUSCAR" INICIO*/
+@media (min-width: 451px) and (max-width: 480px){
+    .d-flex{
+        flex-direction: column;
+        align-self: center;
+        align-items: end;
+    }
+    .form-control{
+        width: 50%;
+    }
+    .btn-outline-success{
+        width: 50%;
+    }
+}
+/*MQ SOLO PARA BOTON "BUSCAR" FINAL*/
