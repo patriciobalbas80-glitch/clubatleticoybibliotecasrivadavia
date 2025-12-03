@@ -1,526 +1,495 @@
 /* FUENTE Crimson Text*/
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*font-family: "Crimson Text", serif;*/
-*{
-    margin: 0;
-    padding: 0;
-}
-body{ /*ESTILADO PARA BODY GENERAL*/
-
-    font-family: "Crimson Text", serif;
+body { /*ESTILADO PARA BODY GENERAL*/
+  font-family: "Crimson Text", serif;
 }
 
-/*ESTILADO PARA HEADER INICIO*/
-
-/* header{
-
-    border: 5px solid #2ca03b;
-    border-radius: 15px;
-    margin: 0px 5px;
-    background-color: blue;
-} */
-
-.container-fluid{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 400;
+  color: #2ca03b;
 }
 
-.collapse {
-
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    color: #000000;
-
+h2 {
+  margin: 15px;
+  padding: 15px;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
 }
 
-.navbar-brand img{
-
-    width: 80px
-
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.navbar .container-fluid .navbar-brand img {
+  width: 80px;
+}
+.navbar .container-fluid .collapse {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  color: #000000;
+}
+.navbar .container-fluid .form-control {
+  border: 1px solid #2ca03b;
+}
+.navbar .container-fluid .btn-outline-success {
+  background-color: #2ca03b;
+  color: #000000;
+  height: auto;
+}
+.navbar {
+  border: 5px solid #2ca03b;
+  border-radius: 15px;
+  margin: 0px 5px;
 }
 
-.navbar{
-
-    border: 5px solid #2ca03b;
-    border-radius: 15px;
-    margin: 0px 5px;
+.basquet .p-deportes, .tenis .p-deportes, .atletismo .p-deportes, .futbol-resumen .p-futbol, .container-campeonatos .p-futbol, .container-noticias .article-noticias1 .p-noticias, .container-noticias .article-noticias2 .p-noticias, .container-noticias .article-noticias3 .p-noticias {
+  font-size: 16px;
+  margin: 20px 50px;
 }
 
-.btn-outline-success{
-
-    background-color:#2ca03b;
-    color: #000000;
-    height: auto;
-
+.container-noticias .article-noticias1 .fechanoticias, .container-noticias .article-noticias2 .fechanoticias, .container-noticias .article-noticias3 .fechanoticias {
+  font-size: 12px;
+  text-align: center;
 }
 
-.form-control{
-    border: 1px solid #2ca03b;
-}
-/*ESTILADO HEADER FINAL*/
-
-/*ESTILADO DE FOOTER INICIO*/
-
-footer{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 16px;
-    gap: 20px;
-    border-top: 2px solid #2ca03b;
-    padding-top: 15px;
+.img-institucional, .futbol-resumen img, .container-campeonatos .img-futbol, .container-noticias .img-noticias {
+  width: 100%;
+  height: auto;
 }
 
-.footer-p{
-    font-size: 15px;
+.gallery .foto1 img, .gallery .foto2 img, .gallery .foto3 img, .gallery .foto4 img, .gallery .foto5 img, .gallery .foto6 img, .gallery .foto7 img, .gallery .foto8 img, .gallery .foto9 img {
+  justify-self: center;
+  align-self: center;
+  width: 500px;
+  height: 400px;
+  border: 3px solid #2ca03b;
 }
 
-.logoparafooter{
-
-    width: 80px;
-
+.container-noticias {
+  font-size: 16px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas: "img-noticias1 article-noticias1 article-noticias1 proximos-partidos" "img-noticias2 article-noticias2 article-noticias2 proximos-partidos" "img-noticias3 article-noticias3 article-noticias3 proximos-partidos";
+  gap: 15px;
 }
-
-/*ESTILADO DE FOOTER HASTA ACA*/
-
-h2{
-
-    margin: 15px;
-    padding: 15px;
-    font-weight: 400;
-    color: black;
-    font-size: 40px;
-
+.container-noticias .proximos-partidos {
+  grid-area: proximos-partidos;
+  align-self: self-start;
+  border: 3px solid #2ca03b;
+  border-radius: 10px;
+  padding: 10px 15px;
 }
-
-.deportes{
-
-    font-weight: 500;
-    font-size: 45px;
-    text-decoration: underline;
-    color: #2ca03b;
-
+.container-noticias .img-noticias {
+  grid-area: img-noticias1;
+  margin-left: 15px;
 }
-
-h1{
-
-    font-size: 100px;
-    text-align: center;
-    font-weight: 400;
-    color: #2ca03b;
-  
+.container-noticias .article-noticias1 {
+  grid-area: article-noticias1;
 }
-
-/*ESTILADO MAIN-HOME INICIO*/
-
-.container-noticias{
-
-    margin: 5px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    grid-template-areas: 
-    "img-noticias1 article-noticias1 article-noticias1 proximos-partidos"
-    "img-noticias2 article-noticias2 article-noticias2 proximos-partidos"
-    "img-noticias3 article-noticias3 article-noticias3 proximos-partidos";
-    gap: 15px;
+.container-noticias .img-noticias {
+  grid-area: img-noticias2;
 }
-
-.proximos-partidos{
-    grid-area: proximos-partidos;
-    align-self: self-start;
-    border: 3px solid #2ca03b;
-    border-radius: 10px;
-    padding: 10px 15px;
+.container-noticias .article-noticias2 {
+  grid-area: article-noticias2;
 }
-
-.img-noticias1{
-    grid-area: img-noticias1;
+.container-noticias .img-noticias {
+  grid-area: img-noticias3;
 }
-
-.img-noticias2{
-    grid-area: img-noticias2;
+.container-noticias .article-noticias3 {
+  grid-area: article-noticias3;
 }
-
-.img-noticias3{
-    grid-area: img-noticias3;
-}
-
-
-.article-noticias1{
-    grid-area: article-noticias1;
-}
-
-.article-noticias2{
-    grid-area: article-noticias2;
-}
-
-.article-noticias3{
-    grid-area: article-noticias3;
-}
-/*ESTILADO MAIN-HOME FINAL*/
-
-/*ESTILADO PAGINA INSTITUCIONAL INICIO*/
-
-.dropdown-menu{
-    background-color: #2ca03b;
-    border: 1px solid black;
-    color: #fafafa;
-    justify-content: center;
-}
-
-.dropdown-item:focus, .dropdown-item:hover {
-
-    background-color: #fafafa;
-    color: #2ca03b;
-}
-.btn-institucional{
-    border: 2px solid #2ca03b;
-    font-size: 25px;
-}
-.dropdown-institucional{
-    justify-self: center;
-}
-.dropdown-item{
-    color: #fafafa;
-}
-
-.p-institucional{
-    font-size: 20px;
-    margin: 20px;
-}
-.img-institucional{
-    text-align: center;
-}
-/*ESTILADO PAGINA INSTITUCIONAL FINAL*/
-
-/* PSEUDOCLASES Y BEM */
-
-/*nav a:hover {
-color: white; /* el texto se vuelve naranja */
-/*text-decoration: underline;
-text-decoration-color: #2ca03b;*/
-/*border: 1px solid black;
-border-radius: 15px;
-border-style: hidden;*/
-/*padding: 10px;
-background-color: #2ca03b;*/
-
-/*}*/
-
-/* Mantener accesibilidad del foco 
-input:focus-visible {
-outline: 3px solid #1e90ff;
-outline-offset: 2px;
-border-color: #1e90ff;
-} */
-
-/*button:active {
-background-color: darkblue;
-transform: scale(0.95); /* efecto de presión */
-
-.campeonatos-ol {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  
-
-}
-
-.campeonatos-li {
-
-    display: flex;
+@media (max-width: 451px) {
+  .container-noticias {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "proximos-partidos" "img-noticias1" "article-noticias1" "img-noticias2" "article-noticias2" "img-noticias3" "article-noticias3";
+    justify-content: normal;
+    gap: 5px;
+  }
+  .d-flex {
     flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
-  
+    align-self: center;
+    align-items: end;
+  }
+  .form-control {
+    width: 50%;
+  }
+  .btn-outline-success {
+    width: 50%;
+  }
+  .container-noticias h2 {
+    font-size: 25px;
+    justify-self: center;
+  }
+  .article-noticias1 p {
+    font-size: 15px;
+    width: 350px;
+  }
+  .article-noticias2 p {
+    font-size: 15px;
+    width: 350px;
+  }
+  .article-noticias3 p {
+    font-size: 15px;
+    width: 350px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
-
-.campeonatos-li a{
-    text-decoration: none;
-    list-style-type: none;
-    color: #2ca03b;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 30px;
+.campeonatos-ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 16px;
+}
+.campeonatos-ol .campeonatos-li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+.campeonatos-ol .campeonatos-li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #2ca03b;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
 }
 
 .futbol-resumen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin: 20px 50px;
+}
+.plantel input {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  font-size: 30px;
+  padding: 10px 50px;
+  font-weight: 200;
+  margin: 20px 0;
+  background-color: #2ca03b;
+  cursor: pointer;
+}
 
-    display: flex;
+.container-campeonatos .img-futbol {
+  text-align: center;
+}
+
+.dropdown-institucional .btn-institucional {
+  border: 2px solid #2ca03b;
+  font-size: 25px;
+}
+.dropdown-institucional {
+  justify-self: center;
+}
+.dropdown-institucional .dropdown-menu {
+  background-color: #2ca03b;
+  border: 1px solid #000000;
+  color: #fafafa;
+  justify-content: center;
+}
+.dropdown-institucional .dropdown-menu .dropdown-item {
+  color: #fafafa;
+}
+.dropdown-institucional .dropdown-menu .dropdown-item .dropdown-item:focus, .dropdown-institucional .dropdown-menu .dropdown-item .dropdown-item:hover {
+  background-color: #fafafa;
+  color: #2ca03b;
+}
+
+.p-institucional {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.img-institucional {
+  text-align: center;
+}
+
+.imgs-carnavales {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 15px;
+  width: 700px;
+  height: 500px;
+}
+
+.basquet .img-deportesbasquet {
+  text-align: center;
+}
+.basquet .img-deportesbasquet img {
+  width: 400px;
+}
+
+.tenis .img-deportestenis {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 15px;
+  width: 700px;
+  height: 500px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 450px);
+  gap: 25px 20px;
+  justify-content: space-around;
+  grid-template-areas: "video video video" "video video video" "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
+}
+.gallery video {
+  grid-area: video;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border: 3px solid #2ca03b;
+}
+.gallery .foto1 img {
+  grid-area: foto1;
+}
+.gallery .foto2 img {
+  grid-area: foto2;
+}
+.gallery .foto3 img {
+  grid-area: foto3;
+}
+.gallery .foto4 img {
+  grid-area: foto4;
+}
+.gallery .foto5 img {
+  grid-area: foto5;
+}
+.gallery .foto6 img {
+  grid-area: foto6;
+}
+.gallery .foto7 img {
+  grid-area: foto7;
+}
+.gallery .foto8 img {
+  grid-area: foto8;
+}
+.gallery .foto9 img {
+  grid-area: foto9;
+}
+
+footer .logoparafooter {
+  width: 80px;
+}
+footer .footer-p {
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  gap: 20px;
+  border-top: 2px solid #2ca03b;
+  padding-top: 15px;
+}
+
+/*MEDIA QUERIES*/
+/*MQ QUE HACE RESPONSIVE PARA MOBILE INICIO*/
+@media (max-width: 451px) {
+  .d-flex {
+    flex-direction: column;
+    align-self: center;
+    align-items: end;
+  }
+  .d-flex .form-control {
+    width: 50%;
+  }
+  .d-flex .btn-outline-success {
+    width: 50%;
+  }
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .container-noticias {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "proximos-partidos" "img-noticias1" "article-noticias1" "img-noticias2" "article-noticias2" "img-noticias3" "article-noticias3";
+    justify-content: normal;
+    gap: 5px;
+  }
+  .container-noticias h2 {
+    font-size: 25px;
+    justify-self: center;
+  }
+  .container-noticias .article-noticias1 p {
+    font-size: 15px;
+  }
+  .container-noticias .article-noticias2 p {
+    font-size: 15px;
+  }
+  .container-noticias .article-noticias3 p {
+    font-size: 15px;
+  }
+  .campeonatos-ol {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 40px;
-    margin: 20px 50px;
-
-}
-
-.futbol-resumen img {
-
+  }
+  .campeonatos-li {
+    margin-top: 10px;
+  }
+  .plantel input {
+    font-size: 15px;
+    padding: 10px 25px;
+    margin: 20px 0;
+  }
+  .dropdown-institucional {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .p-institucional {
+    font-size: 15px;
+  }
+  .img-institucional {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .img-institucional img {
     width: 100%;
     height: auto;
-
+  }
+  .basquet .img-deportesbasquet img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .tenis .img-deportestenis {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tenis .img-deportestenis img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: "video" "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9";
+  }
+  .gallery video {
+    width: 100%;
+    height: auto;
+  }
 }
-
-.plantel input {
-
+@media (min-width: 451px) and (max-width: 900px) {
+  h1 {
+    font-size: 80px;
+    justify-self: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .redes-footer {
+    justify-content: space-between;
+  }
+  .container-noticias {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "proximos-partidos" "img-noticias1" "article-noticias1" "img-noticias2" "article-noticias2" "img-noticias3" "article-noticias3";
+    justify-content: normal;
+    gap: 5px;
+  }
+  .titulo-noticias {
+    font-size: 25px;
+    justify-self: center;
+  }
+  .p-noticias {
+    font-size: 16px;
+    width: 350px;
+    margin: 5px;
+  }
+  .proximos-partidos {
+    justify-self: center;
+    align-self: center;
+    margin: 15px;
+  }
+  .campeonatos-ol {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+  }
+  .basquet .img-deportesbasquet img {
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+  }
+  .tenis .img-deportestenis {
     display: flex;
     flex-direction: row;
-    justify-self: center;
-    font-size: 30px;
-    padding: 10px 50px;
-    font-weight: 200;
-    margin: 20px 0;
-    background-color: #2ca03b;
-    cursor: pointer;
-
-}
-
-.gallery{
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 450px);
-    gap: 50px 20px;
     justify-content: space-around;
-    grid-template-areas: "video video video"
-    "video video video"
-    "foto1 foto2 foto3"
-    "foto4 foto5 foto6"
-    "foto7 foto8 foto9";
-
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+  }
+  .tenis .img-deportestenis img {
+    width: 48%;
+    max-width: 48%;
+    height: auto;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 350px);
+    gap: 20px;
+    grid-template-areas: "video video" "video video" "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 .";
+  }
+  .gallery video {
+    width: 80%;
+  }
 }
-
-video{
-
-    grid-area: video;
+/* MQ SOLO PARA BOTON "BUSCAR" INICIO*/
+@media (min-width: 451px) and (max-width: 480px) {
+  .d-flex {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+  .form-control {
     width: 50%;
-    justify-self: center;
-    align-self: center;
-    border: 3px solid green;
-
-}
-.foto1 img{ /*COPIAR Y PEGAR EN TODAS LAS FOTOS EN EL SCSS*/
-
-    grid-area: foto1;
-    justify-self: center;
-    align-self: center;
-    width: 500px;
-    height: 400px;
-    border: 3px solid green;
-
+  }
+  .btn-outline-success {
+    width: 50%;
+  }
 }
 
-.foto2{
-
-    grid-area: foto2;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto3{
-
-    grid-area: foto3;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto4{
-
-    grid-area: foto4;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto5{
-
-    grid-area: foto5;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto6{
-
-    grid-area: foto6;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto7{
-
-    grid-area: foto7;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto8{
-
-    grid-area: foto8;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.foto9{
-
-    grid-area: foto9;
-    justify-self: center;
-    align-self: center;
-
-}
-
-/* MEDIA QUERIES*/
-/*MQ QUE HACE RESPONSIVE PARA MOBILE AL INDEX-FUTBOL-INSTITUCIONAL INICIO*/
-@media (max-width: 451px) {
-    .container-noticias{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "proximos-partidos"
-        "img-noticias1"
-        "article-noticias1"
-        "img-noticias2"
-        "article-noticias2"
-        "img-noticias3"
-        "article-noticias3";
-        justify-content: normal;
-        gap: 5px;      
-    }
-    .d-flex{
-        flex-direction: column;
-        align-self: center;
-        align-items: end;
-    }
-    .form-control{
-        width: 50%;
-    }
-    .btn-outline-success{
-        width: 50%;
-    }
-    .container-noticias h2{
-        font-size: 25px;
-        justify-self: center;
-    }
-    .article-noticias1 p{
-        font-size: 15px;
-        width: 350px;
-    }
-    .article-noticias2 p{
-        font-size: 15px;
-        width: 350px;
-    }
-    .article-noticias3 p{
-        font-size: 15px;
-        width: 350px;
-    }
-    h1{
-        font-size: 60px;
-    }
-    .proximos-partidos{
-        margin-bottom: 10px;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .campeonatos-ol{
-        flex-direction: column;
-        align-items: center;
-    }
-    .campeonatos-li {
-        margin-top: 10px;
-    }
-    .plantel input{
-        font-size: 15px;
-        padding: 10px 25px;
-        margin: 20px 0;
-    }
-    .p-institucional{
-    font-size: 15px;
-    }
-    .btn-institucional{
-    border: 2px solid #2ca03b;
-    font-size: 15px;
-    }
-}
-/*MQ QUE HACE RESPONSIVE PARA MOBILE AL INDEX-FUTBOL-INSTITUCIONAL FINAL*/
-
-/*MQ QUE HACE RESPONSIVE EN 451PX-900PX AL INDEX-FUTBOL INICIO*/
-@media (min-width: 451px) and (max-width: 900px){
-    .container-noticias{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "proximos-partidos"
-        "img-noticias1"
-        "article-noticias1"
-        "img-noticias2"
-        "article-noticias2"
-        "img-noticias3"
-        "article-noticias3";
-        justify-content: normal;
-        gap: 5px;      
-    }
-    .titulo-noticias{
-        font-size: 25px;
-        justify-self: center;
-    }
-    .p-noticias{
-            font-size: 16px;
-        width: 350px;
-        margin: 5px;
-    }
-    h1{
-        font-size: 80px;
-        justify-self: center;
-    }
-    .proximos-partidos{
-        justify-self: center;
-        align-self: center;
-        margin: 15px;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .redes-footer{
-        justify-content: space-between;
-    }
-    .campeonatos-ol{
-        flex-wrap: wrap;
-        gap: 10px;
-        padding-left: 0;
-    }
-}
-/*MQ QUE HACE RESPONSIVE EN 451PX-900PX AL INDEX-FUTBOL FINAL*/
-
-/*MQ SOLO PARA BOTON "BUSCAR" INICIO*/
-@media (min-width: 451px) and (max-width: 480px){
-    .d-flex{
-        flex-direction: column;
-        align-self: center;
-        align-items: end;
-    }
-    .form-control{
-        width: 50%;
-    }
-    .btn-outline-success{
-        width: 50%;
-    }
-}
-/*MQ SOLO PARA BOTON "BUSCAR" FINAL*/
+/*# sourceMappingURL=style.css.map */
