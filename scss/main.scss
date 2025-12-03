@@ -1,0 +1,21 @@
+//BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+@use "./partials/base/font-body";
+
+//COMPONENTS
+@use "./partials/components/general";
+@use "./partials/components/header";
+@use "./partials/components/home";
+@use "./partials/components/futbol.scss";
+@use "./partials/components/institucional";
+@use "./partials/components/deportes";
+@use "./partials/components/multimedia";
+@use "./partials/components/footer";
+@use "./partials/components/mq";
+
+
+//UTILITIES
+@use "./partials/utilities/mixins";
+@use "./partials/utilities/variables";
+@use "./partials/utilities/extend";

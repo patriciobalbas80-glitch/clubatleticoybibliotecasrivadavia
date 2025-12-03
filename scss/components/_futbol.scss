@@ -1,0 +1,60 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+.campeonatos-ol {
+
+    @include mixins.flex-futbol(row);
+    justify-content: space-around;
+    font-size: variables.$font-size-gral;
+    .campeonatos-li {
+        @include mixins.flex-futbol(column);
+        text-align: center;
+        margin-top: 20px;
+        a{
+            text-decoration: none;
+            list-style-type: none;
+            color: variables.$green-color1;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+    }
+}
+
+.futbol-resumen {
+
+    @include mixins.flex-futbol(column);
+    align-items: center;
+    text-align: start;
+    margin: 20px 50px;
+    .p-futbol {
+        @extend %p;
+    }
+    img {
+        @extend %img-width;
+    }
+}
+
+.plantel input{
+
+    @include mixins.flex-futbol(row);
+    justify-self: center;
+    font-size: 30px;
+    padding: 10px 50px;
+    font-weight: 200;
+    margin: 20px 0;
+    background-color: variables.$green-color1;
+    cursor: pointer;
+
+}
+
+.container-campeonatos {
+    .p-futbol{
+        @extend %p;
+    }
+    .img-futbol{
+        @extend %img-width;
+        text-align: center;
+    }
+}

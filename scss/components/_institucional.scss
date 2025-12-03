@@ -1,0 +1,42 @@
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+.dropdown-institucional{
+    .btn-institucional{
+        border: 2px solid variables.$green-color1;
+        font-size: 25px;
+    }
+    justify-self: center;
+    .dropdown-menu{
+        background-color: variables.$green-color1;
+        border: 1px solid variables.$black-color;
+        color: variables.$white-color;
+        justify-content: center;
+        .dropdown-item{
+            color: variables.$white-color;
+            .dropdown-item:focus, .dropdown-item:hover {
+                background-color: variables.$white-color;
+                color: variables.$green-color1;
+            }
+        }
+    }
+}
+
+.p-institucional{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.img-institucional{
+    text-align: center;
+    @extend %img-width;
+}
+
+.imgs-carnavales{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 15px;
+    width: 700px;
+    height: 500px;
+}

@@ -1,0 +1,244 @@
+@use "../utilities/variables";
+
+/*MEDIA QUERIES*/
+/*MQ QUE HACE RESPONSIVE PARA MOBILE INICIO*/
+
+@media (max-width: 451px) {
+    //BOTON BUSCAR
+    .d-flex{
+        flex-direction: column;
+        align-self: center;
+        align-items: end;
+        .form-control{
+            width: 50%;
+        }
+        .btn-outline-success{
+            width: 50%;
+        }
+    }
+    //GENERAL
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+    //HOME
+    .container-noticias{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "proximos-partidos"
+        "img-noticias1"
+        "article-noticias1"
+        "img-noticias2"
+        "article-noticias2"
+        "img-noticias3"
+        "article-noticias3";
+        justify-content: normal;
+        gap: 5px;    
+        h2{
+            font-size: 25px;
+            justify-self: center;
+            }  
+            .article-noticias1 p{
+            font-size: 15px;
+        }
+        .article-noticias2 p{
+            font-size: 15px;
+        }
+        .article-noticias3 p{
+            font-size: 15px;
+        }
+    }
+    //FUTBOL
+    .campeonatos-ol{
+        flex-direction: column;
+        align-items: center;
+    }
+    .campeonatos-li {
+        margin-top: 10px;
+    }
+    .plantel input{
+        font-size: 15px;
+        padding: 10px 25px;
+        margin: 20px 0;
+    }
+    //INSTITUCIONAL
+    .dropdown-institucional {
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+    .p-institucional{
+        font-size: 15px;
+    }
+    .img-institucional {
+        width: 100%;
+        margin: 20px 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    //DEPORTES
+    .basquet {
+        .img-deportesbasquet {
+            img {
+                width: 100%; 
+                max-width: 100%; 
+                height: auto;
+            }
+        }
+    }
+     .tenis{
+         .img-deportestenis {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                   }       
+        }
+    }
+    //MULTIMEDIA
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        grid-template-areas: "video"
+                             "foto1"
+                             "foto2"
+                             "foto3"
+                             "foto4"
+                             "foto5"
+                             "foto6"
+                             "foto7"
+                             "foto8"
+                             "foto9";
+        video{
+        width: 100%;
+        height: auto;
+        }
+        
+                            
+    }
+
+}
+
+//MQ QUE HACE RESPONSIVE PARA MOBILE FINAL
+
+//MQ QUE HACE RESPONSIVE EN 451PX-900PX INICIO
+@media (min-width: 451px) and (max-width: 900px){
+    //GENERAL
+    h1{
+        font-size: 80px;
+        justify-self: center;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+    .redes-footer{
+        justify-content: space-between;
+    }
+    //HOME
+    .container-noticias{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "proximos-partidos"
+        "img-noticias1"
+        "article-noticias1"
+        "img-noticias2"
+        "article-noticias2"
+        "img-noticias3"
+        "article-noticias3";
+        justify-content: normal;
+        gap: 5px;      
+    }
+    .titulo-noticias{
+        font-size: 25px;
+        justify-self: center;
+    }
+    .p-noticias{
+            font-size: 16px;
+        width: 350px;
+        margin: 5px;
+    }
+    .proximos-partidos{
+        justify-self: center;
+        align-self: center;
+        margin: 15px;
+    }
+
+    //FUTBOL
+    .campeonatos-ol{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+    }
+    //DEPORTES
+    .basquet {
+        .img-deportesbasquet {
+            img {
+                width: 400px;
+                max-width: 90%;
+                height: auto;
+            }
+        }
+    }
+    .tenis {
+        .img-deportestenis {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-around; 
+            align-items: flex-start;
+            width: 100%;
+            height: auto;
+            img {
+                width: 48%; 
+                max-width: 48%;
+                height: auto;
+            }
+        }
+    }
+    //MULTIMEDIA
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 350px);
+        gap: 20px;
+        grid-template-areas: "video video"
+                             "video video"
+                             "foto1 foto2"
+                             "foto3 foto4"
+                             "foto5 foto6"
+                             "foto7 foto8"
+                             "foto9 .";
+        video{
+            width: 80%;
+        }
+    }
+}
+// MQ QUE HACE RESPONSIVE EN 451PX-900PX FINAL
+
+/* MQ SOLO PARA BOTON "BUSCAR" INICIO*/
+@media (min-width: 451px) and (max-width: 480px){
+    .d-flex{
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+    .form-control{
+        width: 50%;
+    }
+    .btn-outline-success{
+        width: 50%;
+    }
+}
+// MQ SOLO PARA BOTON "BUSCAR" FINAL

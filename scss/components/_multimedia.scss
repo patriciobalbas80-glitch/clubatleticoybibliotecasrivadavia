@@ -1,0 +1,58 @@
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 450px);
+    gap: 25px 20px;
+    justify-content: space-around;
+    grid-template-areas: "video video video"
+    "video video video"
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6"
+    "foto7 foto8 foto9";
+    video{
+        grid-area: video;
+        width: 50%;
+        justify-self: center;
+        align-self: center;
+        border: 3px solid variables.$green-color1;
+    }
+    .foto1 img{ 
+        grid-area: foto1;
+        @extend %gallery-img;
+    }
+    .foto2 img{
+        grid-area: foto2;
+        @extend %gallery-img;
+    }
+    .foto3 img{
+        grid-area: foto3;
+        @extend %gallery-img;
+    }
+    .foto4 img{
+        grid-area: foto4;
+        @extend %gallery-img;
+    }
+    .foto5 img{
+        grid-area: foto5;
+        @extend %gallery-img;
+    }
+    .foto6 img{
+        grid-area: foto6;
+        @extend %gallery-img;
+    }
+    .foto7 img{
+        grid-area: foto7;
+        @extend %gallery-img;
+    }
+    .foto8 img{
+        grid-area: foto8;
+        @extend %gallery-img;
+    }
+    .foto9 img{
+        grid-area: foto9;
+        @extend %gallery-img;
+    }
+}

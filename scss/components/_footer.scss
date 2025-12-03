@@ -1,0 +1,18 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+footer{
+    .logoparafooter{
+        width: 80px;
+    }
+    .footer-p{
+    font-size: 15px;
+    }
+    @include mixins.flex-gral (row, center, center);
+    font-weight: 400;
+    font-size: 16px;
+    gap: 20px;
+    border-top: 2px solid variables.$green-color1;
+    padding-top: 15px;
+}
+
+

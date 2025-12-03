@@ -1,0 +1,16 @@
+@mixin flex-header ($justifyc) {
+    display: flex;
+    justify-content: $justifyc;
+}
+
+@mixin flex-gral ($f-direc-gral, $just-c-gral, $alig-i-gral) {
+    display: flex;
+    flex-direction: $f-direc-gral;
+    justify-content: $just-c-gral;
+    align-items: $alig-i-gral;
+}
+
+@mixin flex-futbol ($f-direc-futbol) {
+    display: flex;
+    flex-direction: $f-direc-futbol;
+}

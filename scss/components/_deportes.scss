@@ -1,0 +1,33 @@
+@use "../utilities/extend";
+
+.basquet{
+    .p-deportes{
+        @extend %p;
+    }
+    .img-deportesbasquet{
+        text-align: center;
+        img{
+            width: 400px;
+        }
+    }
+}
+
+.tenis{
+    .p-deportes{
+        @extend %p;
+    }
+    .img-deportestenis{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        gap: 15px;
+        width: 700px;
+        height: 500px;
+    }
+}
+
+.atletismo{
+    .p-deportes{
+        @extend %p;
+    }
+}

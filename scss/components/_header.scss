@@ -1,0 +1,27 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+.navbar{
+    .container-fluid{
+        @include mixins.flex-header(space-between);
+        flex-direction: row;
+        .navbar-brand img{
+            width: 80px;
+        }
+        .collapse {
+            @include mixins.flex-header(space-around);
+            font-size: 20px;
+            color: variables.$black-color;
+        }
+        .form-control{
+            border: 1px solid variables.$green-color1;
+        }
+        .btn-outline-success{
+            background-color: variables.$green-color1;
+            color: variables.$black-color;
+            height: auto;
+        }
+    }
+    border: 5px solid variables.$green-color1;
+    border-radius: 15px;
+    margin: 0px 5px;
+}
