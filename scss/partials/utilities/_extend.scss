@@ -22,3 +22,9 @@
     height: 400px;
     border: 3px solid variables.$green-color1;
 }
+
+%scale-hover{
+    &:hover{
+        transform: scale(1.2);
+    }
+}

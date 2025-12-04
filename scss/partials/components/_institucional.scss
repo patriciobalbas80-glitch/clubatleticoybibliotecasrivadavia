@@ -2,6 +2,7 @@
 @use "../utilities/extend";
 
 .dropdown-institucional{
+    
     .btn-institucional{
         border: 2px solid variables.$green-color1;
         font-size: 25px;
@@ -40,3 +41,5 @@
     width: 700px;
     height: 500px;
 }
+
+

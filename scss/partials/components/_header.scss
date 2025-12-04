@@ -5,6 +5,13 @@
         @include mixins.flex-header(space-between);
         flex-direction: row;
         .navbar-brand img{
+            &:hover{
+                animation-name: logo-rotate;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: 1.5s;
+                animation-delay: 0.3s;
+            }
             width: 80px;
         }
         .collapse {
@@ -24,4 +31,12 @@
     border: 5px solid variables.$green-color1;
     border-radius: 15px;
     margin: 0px 5px;
+}
+
+@keyframes logo-rotate{
+    20% {transform: rotateY(72deg);}
+    40% {transform: rotateY(144deg);}
+    60% {transform: rotateY(216deg);}
+    80% {transform: rotateY(288deg);}
+    100% {transform: rotateY(260deg);}
 }

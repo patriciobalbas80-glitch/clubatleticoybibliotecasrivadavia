@@ -22,37 +22,46 @@
     .foto1 img{ 
         grid-area: foto1;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto2 img{
         grid-area: foto2;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto3 img{
         grid-area: foto3;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto4 img{
         grid-area: foto4;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto5 img{
         grid-area: foto5;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto6 img{
         grid-area: foto6;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto7 img{
         grid-area: foto7;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto8 img{
         grid-area: foto8;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
     .foto9 img{
         grid-area: foto9;
         @extend %gallery-img;
+        @extend %scale-hover;
     }
 }

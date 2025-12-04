@@ -30,6 +30,13 @@ h2 {
   justify-content: space-between;
   flex-direction: row;
 }
+.navbar .container-fluid .navbar-brand img:hover {
+  animation-name: logo-rotate;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+}
 .navbar .container-fluid .navbar-brand img {
   width: 80px;
 }
@@ -53,6 +60,23 @@ h2 {
   margin: 0px 5px;
 }
 
+@keyframes logo-rotate {
+  20% {
+    transform: rotateY(72deg);
+  }
+  40% {
+    transform: rotateY(144deg);
+  }
+  60% {
+    transform: rotateY(216deg);
+  }
+  80% {
+    transform: rotateY(288deg);
+  }
+  100% {
+    transform: rotateY(260deg);
+  }
+}
 .basquet .p-deportes, .tenis .p-deportes, .atletismo .p-deportes, .futbol-resumen .p-futbol, .container-campeonatos .p-futbol, .container-noticias .article-noticias1 .p-noticias, .container-noticias .article-noticias2 .p-noticias, .container-noticias .article-noticias3 .p-noticias {
   font-size: 16px;
   margin: 20px 50px;
@@ -74,6 +98,10 @@ h2 {
   width: 500px;
   height: 400px;
   border: 3px solid #2ca03b;
+}
+
+.gallery .foto1 img:hover, .gallery .foto2 img:hover, .gallery .foto3 img:hover, .gallery .foto4 img:hover, .gallery .foto5 img:hover, .gallery .foto6 img:hover, .gallery .foto7 img:hover, .gallery .foto8 img:hover, .gallery .foto9 img:hover {
+  transform: scale(1.2);
 }
 
 .container-noticias {
@@ -314,6 +342,14 @@ footer {
   gap: 20px;
   border-top: 2px solid #2ca03b;
   padding-top: 15px;
+}
+footer i:hover {
+  transform: translate(5px, 5px);
+}
+footer i a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #2ca03b;
 }
 
 /*MEDIA QUERIES*/

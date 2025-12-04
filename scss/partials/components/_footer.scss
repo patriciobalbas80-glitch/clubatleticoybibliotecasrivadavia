@@ -1,6 +1,7 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 footer{
+    
     .logoparafooter{
         width: 80px;
     }
@@ -13,6 +14,17 @@ footer{
     gap: 20px;
     border-top: 2px solid variables.$green-color1;
     padding-top: 15px;
+    i{
+        &:hover{
+                transform: translate(5px, 5px);
+            }
+        a{
+            text-decoration: none;
+            list-style-type: none;
+            color: variables.$green-color1;
+        }
+    }
 }
+
 
 
