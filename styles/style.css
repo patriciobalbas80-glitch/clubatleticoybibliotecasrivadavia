@@ -142,48 +142,6 @@ h2 {
 .container-noticias .article-noticias3 {
   grid-area: article-noticias3;
 }
-@media (max-width: 451px) {
-  .container-noticias {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "proximos-partidos" "img-noticias1" "article-noticias1" "img-noticias2" "article-noticias2" "img-noticias3" "article-noticias3";
-    justify-content: normal;
-    gap: 5px;
-  }
-  .d-flex {
-    flex-direction: column;
-    align-self: center;
-    align-items: end;
-  }
-  .form-control {
-    width: 50%;
-  }
-  .btn-outline-success {
-    width: 50%;
-  }
-  .container-noticias h2 {
-    font-size: 25px;
-    justify-self: center;
-  }
-  .article-noticias1 p {
-    font-size: 15px;
-    width: 350px;
-  }
-  .article-noticias2 p {
-    font-size: 15px;
-    width: 350px;
-  }
-  .article-noticias3 p {
-    font-size: 15px;
-    width: 350px;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  footer {
-    flex-direction: column;
-  }
-}
 .campeonatos-ol {
   display: flex;
   flex-direction: row;
@@ -367,7 +325,7 @@ footer i a {
     width: 50%;
   }
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
   footer {
@@ -377,12 +335,15 @@ footer i a {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "proximos-partidos" "img-noticias1" "article-noticias1" "img-noticias2" "article-noticias2" "img-noticias3" "article-noticias3";
-    justify-content: normal;
+    justify-content: center;
     gap: 5px;
   }
   .container-noticias h2 {
     font-size: 25px;
     justify-self: center;
+  }
+  .container-noticias .img-noticias {
+    width: 80%;
   }
   .container-noticias .article-noticias1 p {
     font-size: 15px;
@@ -414,7 +375,7 @@ footer i a {
     font-size: 15px;
   }
   .img-institucional {
-    width: 100%;
+    width: 80%;
     margin: 20px 0;
   }
   .img-institucional img {
@@ -447,6 +408,9 @@ footer i a {
     width: 100%;
     height: auto;
   }
+  .gallery img {
+    width: 50%;
+  }
 }
 @media (min-width: 451px) and (max-width: 900px) {
   h1 {
@@ -466,24 +430,60 @@ footer i a {
     justify-content: normal;
     gap: 5px;
   }
-  .titulo-noticias {
+  .container-noticias .proximos-partidos {
+    justify-self: center;
+    align-self: center;
+    margin: 15px;
+  }
+  .container-noticias .img-noticias {
+    width: 100%;
+    margin: 20px 0;
+    justify-self: center;
+  }
+  .container-noticias .article-noticias1 .titulo-noticias {
     font-size: 25px;
     justify-self: center;
   }
-  .p-noticias {
+  .container-noticias .article-noticias1 .p-noticias {
     font-size: 16px;
-    width: 350px;
-    margin: 5px;
+    width: 90%;
+    margin: 15px;
   }
-  .proximos-partidos {
+  .container-noticias .article-noticias2 .titulo-noticias {
+    font-size: 25px;
     justify-self: center;
-    align-self: center;
+  }
+  .container-noticias .article-noticias2 .p-noticias {
+    font-size: 16px;
+    width: 90%;
+    margin: 15px;
+  }
+  .container-noticias .article-noticias3 .titulo-noticias {
+    font-size: 25px;
+    justify-self: center;
+  }
+  .container-noticias .article-noticias3 .p-noticias {
+    font-size: 16px;
+    width: 90%;
     margin: 15px;
   }
   .campeonatos-ol {
     flex-wrap: wrap;
     gap: 10px;
     padding-left: 0;
+  }
+  .dropdown-institucional {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .p-institucional {
+    font-size: 25px;
+  }
+  .img-institucional {
+    width: 80%;
+    margin: 20px 0;
+    justify-self: center;
   }
   .basquet .img-deportesbasquet img {
     width: 400px;
