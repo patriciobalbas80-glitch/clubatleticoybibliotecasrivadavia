@@ -125,8 +125,9 @@
                              "foto8"
                              "foto9";
         video{
-        width: 100%;
+        width: 90%;
         height: auto;
+        justify-self: auto;
         }
         img{
             width: 50%;
@@ -143,7 +144,7 @@
 @media (min-width: 451px) and (max-width: 900px){
     //GENERAL
     h1{
-        font-size: 80px;
+        font-size: 60px;
         justify-self: center;
     }
     
@@ -226,10 +227,11 @@
         justify-content: center;
     }
     .p-institucional{
-        font-size: 25px;
+        font-size: 20px;
+        margin: 10px;
     }
     .img-institucional {
-        width: 80%;
+        width: 100%;
         margin: 20px 0;
         justify-self: center;
     }
@@ -260,18 +262,32 @@
     }
     //MULTIMEDIA
     .gallery{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 350px);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, auto);
         gap: 20px;
-        grid-template-areas: "video video"
-                             "video video"
-                             "foto1 foto2"
-                             "foto3 foto4"
-                             "foto5 foto6"
-                             "foto7 foto8"
-                             "foto9 .";
+        // grid-template-areas: "video video"
+        //                      "video video"
+        //                      "foto1 foto2"
+        //                      "foto3 foto4"
+        //                      "foto5 foto6"
+        //                      "foto7 foto8"
+        //                      "foto9 .";
+        grid-template-areas: "video"
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "foto7"
+        "foto8"
+        "foto9";
         video{
-            width: 80%;
+            width: 50%;
+        }
+        img{
+            width: 100%;
+            height: auto;
         }
     }
 }
