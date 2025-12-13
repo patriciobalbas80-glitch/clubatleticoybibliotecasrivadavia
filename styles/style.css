@@ -87,7 +87,7 @@ h2 {
   text-align: center;
 }
 
-.img-institucional, .futbol-resumen img, .container-campeonatos .img-futbol, .container-noticias .img-noticias {
+.img-institucional, .futbol-resumen img, .container-campeonatos img, .container-noticias .img-noticias {
   width: 100%;
   height: auto;
 }
@@ -164,11 +164,7 @@ h2 {
 }
 
 .futbol-resumen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: start;
-  margin: 20px 50px;
+  margin: 20px 10px;
 }
 .plantel input {
   display: flex;
@@ -182,10 +178,9 @@ h2 {
   cursor: pointer;
 }
 
-.container-campeonatos .img-futbol {
-  text-align: center;
+.container-campeonatos {
+  margin: 20px 10px;
 }
-
 .dropdown-institucional .btn-institucional {
   border: 2px solid #2ca03b;
   font-size: 25px;

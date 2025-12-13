@@ -23,11 +23,7 @@
 }
 
 .futbol-resumen {
-
-    @include mixins.flex-futbol(column);
-    align-items: center;
-    text-align: start;
-    margin: 20px 50px;
+    margin: 20px 10px;
     .p-futbol {
         @extend %p;
     }
@@ -50,12 +46,12 @@
 }
 
 .container-campeonatos {
+    margin: 20px 10px;
     
     .p-futbol{
         @extend %p;
     }
-    .img-futbol{
+    img{
         @extend %img-width;
-        text-align: center;
     }
 }
