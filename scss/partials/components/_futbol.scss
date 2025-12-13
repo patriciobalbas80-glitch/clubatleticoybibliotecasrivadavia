@@ -29,6 +29,7 @@
     }
     img {
         @extend %img-width;
+        border: 3px solid variables.$green-color1;
     }
 }
 
@@ -53,5 +54,6 @@
     }
     img{
         @extend %img-width;
+        border: 3px solid variables.$green-color1;
     }
 }

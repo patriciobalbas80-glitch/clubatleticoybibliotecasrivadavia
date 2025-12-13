@@ -29,6 +29,8 @@
         grid-area: img-noticias1;
         @extend %img-width;
         margin-left: 15px;
+        border: 3px solid variables.$green-color1;
+        border-radius: 5px;
     }
 
     .article-noticias1{
