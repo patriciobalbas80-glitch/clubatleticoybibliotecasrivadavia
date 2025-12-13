@@ -24,12 +24,11 @@
 }
 .container-institucional{
     margin: 20px 10px;
-    .p-institucional{
+    .p-institucional {
         @extend %p;
     }
 
-    img{
-        // text-align: center;
+    img {
         @extend %img-width;
     }
 }
