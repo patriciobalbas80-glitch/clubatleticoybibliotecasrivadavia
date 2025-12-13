@@ -77,7 +77,7 @@ h2 {
     transform: rotateY(260deg);
   }
 }
-.basquet .p-deportes, .tenis .p-deportes, .atletismo .p-deportes, .futbol-resumen .p-futbol, .container-campeonatos .p-futbol, .container-noticias .article-noticias1 .p-noticias, .container-noticias .article-noticias2 .p-noticias, .container-noticias .article-noticias3 .p-noticias {
+.basquet .p-deportes, .tenis .p-deportes, .atletismo .p-deportes, .container-institucional .p-institucional, .futbol-resumen .p-futbol, .container-campeonatos .p-futbol, .container-noticias .article-noticias1 .p-noticias, .container-noticias .article-noticias2 .p-noticias, .container-noticias .article-noticias3 .p-noticias {
   font-size: 16px;
   margin: 20px 50px;
 }
@@ -87,7 +87,7 @@ h2 {
   text-align: center;
 }
 
-.img-institucional, .futbol-resumen img, .container-campeonatos img, .container-noticias .img-noticias {
+.container-institucional img, .futbol-resumen img, .container-campeonatos img, .container-noticias .img-noticias {
   width: 100%;
   height: auto;
 }
@@ -202,24 +202,9 @@ h2 {
   color: #2ca03b;
 }
 
-.p-institucional {
-  font-size: 20px;
-  margin: 20px;
+.container-institucional {
+  margin: 20px 10px;
 }
-
-.img-institucional {
-  text-align: center;
-}
-
-.imgs-carnavales {
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  gap: 15px;
-  width: 700px;
-  height: 500px;
-}
-
 .basquet .img-deportesbasquet {
   text-align: center;
 }
@@ -367,15 +352,7 @@ footer i a {
     justify-content: center;
   }
   .p-institucional {
-    font-size: 15px;
-  }
-  .img-institucional {
-    width: 80%;
-    margin: 20px 0;
-  }
-  .img-institucional img {
-    width: 100%;
-    height: auto;
+    font-size: 16px;
   }
   .basquet .img-deportesbasquet img {
     width: 100%;

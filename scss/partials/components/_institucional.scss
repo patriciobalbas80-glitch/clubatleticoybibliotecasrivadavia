@@ -22,22 +22,14 @@
         }
     }
 }
+.container-institucional{
+    margin: 20px 10px;
+    .p-institucional{
+        @extend %p;
+    }
 
-.p-institucional{
-    font-size: 20px;
-    margin: 20px;
-}
-
-.img-institucional{
-    text-align: center;
-    @extend %img-width;
-}
-
-.imgs-carnavales{
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    gap: 15px;
-    width: 700px;
-    height: 500px;
+    img{
+        // text-align: center;
+        @extend %img-width;
+    }
 }
