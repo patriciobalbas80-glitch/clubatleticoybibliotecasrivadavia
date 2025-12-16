@@ -41,8 +41,7 @@ h2 {
   width: 80px;
 }
 .navbar .container-fluid .collapse {
-  display: flex;
-  justify-content: space-around;
+  justify-items: center;
   font-size: 20px;
   color: #000000;
 }
